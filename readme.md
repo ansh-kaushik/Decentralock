@@ -19,7 +19,7 @@
 2. Create a new repository.
 3. Clone into that repository.
 
-   `git clone https://github.com/ansh-kaushik/Chain-Safe.git`
+   `git clone https://github.com/ansh-kaushik/Decentralock.git`
 
 
 4. Install dependencies:
