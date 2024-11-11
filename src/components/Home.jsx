@@ -8,7 +8,7 @@ function Home() {
       style={{ height: "70vh" }}
       className="d-flex justify-content-center align-items-center  container  "
     >
-      <div className="row  rounded-5 justify-content-between" style={{ borderRadius: "20px" }}>
+      <div className="row rounded-5 justify-content-between w-100" style={{ borderRadius: "20px" }}>
         <div className="col-8">
           <div className="card-body">
             <h2 className="card-title">EMPOWERING BLOCKCHAIN </h2>
@@ -23,9 +23,9 @@ function Home() {
             </Link>
           </div>
         </div>
-        <div className="col-4 text-white text-center">
+        {/* <div className="col-4 text-white text-center">
           <img src={secureVaultLogo} alt="Logo" className="img-fluid" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
