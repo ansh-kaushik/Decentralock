@@ -7,18 +7,18 @@ function Navbar() {
     <>
       <nav
         className="navbar navbar-expand-lg navbar-dark  "
-        style={{ background: "#222831", opacity: "0.9" }}
+        style={{ background: "none", opacity: "0.9" }}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" style={{ fontWeight: "bold", display: "flex" }} href="/">
             <img
               alt="Logo"
               src={logoImage}
-              width="30"
+              width="50"
               height="40"
               className="d-inline-block align-top"
             />
-            SECUREVAULT
+            <span>DECENTRALOCK</span>
           </a>
 
           {/* Navbar toggle button for small screens */}
@@ -39,12 +39,16 @@ function Navbar() {
             <ul className="navbar-nav ml-auto">
               {/* Your navigation buttons */}
               <li className="nav-item">
-                <Link to="/" className="mx-1 btn btn-outline-info">
+                <Link to="/" className="mx-1 btn btn-outline-warning" data-mdb-ripple-color="dark">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/article" className="mx-1 btn btn-info">
+                <Link
+                  to="/article"
+                  className="mx-1 btn btn-outline-warning"
+                  data-mdb-ripple-color="dark"
+                >
                   Services
                 </Link>
               </li>
@@ -55,7 +59,11 @@ function Navbar() {
                 </Link>
               </li> */}
               <li className="nav-item">
-                <Link to="/share" className="mx-1 btn btn-info" data-mdb-ripple-color="dark">
+                <Link
+                  to="/share"
+                  className="mx-1 btn btn btn-outline-warning"
+                  data-mdb-ripple-color="dark"
+                >
                   Share
                 </Link>
               </li>

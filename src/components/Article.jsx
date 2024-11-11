@@ -26,7 +26,7 @@ const Support = ({ contract, setContract, address, setAddress }) => {
   //   setting up wallet credentials
   useEffect(() => {
     const options = {
-      name: "SECUREVAULT",
+      name: "DECENTRALOCK",
       preferredNetwork: NetworkType.GHOSTNET,
       disableDefaultEvents: false,
     };
@@ -156,7 +156,7 @@ const Support = ({ contract, setContract, address, setAddress }) => {
             <button
               type="file"
               style={{ fontSize: "20px", display: "flex", alignItems: "center" }}
-              className={`pl-5 pr-5  ml-5 btn btn-secondary ${loading ? "disabled" : ""} `}
+              className={`pl-5 pr-5  ml-5 btn btn-warning ${loading ? "disabled" : ""} `}
               disabled={loading}
               onClick={uploadFile}
             >
@@ -180,7 +180,7 @@ const Support = ({ contract, setContract, address, setAddress }) => {
           </p>
           <h5 className="text-center mb-3 mt-5">YOUR ACCOUNT</h5>
           <p className="text-center ">
-            <button className="btn btn-secondary" onClick={copyAddress}>
+            <button className="btn btn-primary" onClick={copyAddress}>
               Copy Your wallet Address
             </button>
           </p>
@@ -194,8 +194,8 @@ const Support = ({ contract, setContract, address, setAddress }) => {
           <div className="d-flex justify-content-center flex-row-reverse ">
             <button
               type="button"
-              style={{ borderRadius: "16px" }}
-              className="btn btn-primary text-light font-weight-bold"
+              // style={{ borderRadius: "10px" }}
+              className="btn btn-outline-warning text-light font-weight-bold"
               onClick={setupConnection}
             >
               Connect to Wallet
@@ -219,7 +219,7 @@ const Support = ({ contract, setContract, address, setAddress }) => {
             <div className="input-group-append">
               <button
                 disabled={loading2}
-                className=" btn btn-info"
+                className=" btn btn-warning"
                 type="button"
                 onClick={handleGetData}
                 style={{ display: "flex", alignItems: "center" }}

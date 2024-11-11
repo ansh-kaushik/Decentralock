@@ -26,6 +26,7 @@ function Share({ contract, setContract, address, setAddress }) {
           justifyContent: "center",
           alignItems: "center",
           width: "80vw",
+          background: "rgba(20, 20, 19, 0.8)", // Adjust the last value for transparency
         }}
       >
         <div>
@@ -61,8 +62,8 @@ function Share({ contract, setContract, address, setAddress }) {
                   </div>
                   <button
                     type="submit"
-                    className="btn btn-primary mt-2 mb-2"
-                    style={{ borderRadius: "20px", width: "100%" }}
+                    className="btn btn-outline-warning mt-2 mb-2"
+                    style={{ borderRadius: "20px", width: "100%", fontWeight: "bold" }}
                     onClick={handleShare}
                   >
                     Share
